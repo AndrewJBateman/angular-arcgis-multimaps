@@ -1,27 +1,27 @@
 # Angular ArcGIS Multimaps
 
-* Angular multi-page app using RxJS operators and ArcGIS API mapping  from [Esri](https://www.esri.com/en-us/home) to display map
+* Angular multi-page app using RxJS operators and ArcGIS API mapping from [Esri](https://www.esri.com/en-us/home) to display map
 *** Note: to open web links in a new window use: _ctrl+click on link_**
 
 ## :page_facing_up: Table of contents
 
 * [Angular ArcGIS Multimaps](#angular-arcgis-multimaps)
-  * [:page_facing_up: Table of contents](#page_facing_up-table-of-contents)
+  * [:page\_facing\_up: Table of contents](#page_facing_up-table-of-contents)
   * [:books: General info](#books-general-info)
   * [:camera: Screenshots](#camera-screenshots)
-  * [:signal_strength: Technologies](#signal_strength-technologies)
-  * [:floppy_disk: Setup](#floppy_disk-setup)
+  * [:signal\_strength: Technologies](#signal_strength-technologies)
+  * [:floppy\_disk: Setup](#floppy_disk-setup)
   * [:flashlight: Testing](#flashlight-testing)
   * [:computer: Code Examples](#computer-code-examples)
   * [:cool: Features](#cool-features)
-  * [:clipboard: Status & To-Do List](#clipboard-status--to-do-list)
+  * [:clipboard: Status \& To-Do List](#clipboard-status--to-do-list)
   * [:clap: Inspiration](#clap-inspiration)
   * [:envelope: Contact](#envelope-contact)
 
 ## :books: General info
 
 * Basic PWA with SSR and Tailwind CSS
-* esri-map view refactored to use @arcgis/core mapView and WebMap with a GraphicsLayer to allow sketching
+* Esri-map view refactored to use @arcgis/core mapView and WebMap with a GraphicsLayer to allow sketching
 * WebView map specified using a [portalItem id](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#portalItem)
 * About page - info. about the app
 * Contact page - info. about the author
