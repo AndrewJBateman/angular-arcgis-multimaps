@@ -1,4 +1,10 @@
-import { Component, ElementRef, OnDestroy, OnInit, ViewChild } from '@angular/core';
+import {
+  Component,
+  ElementRef,
+  OnDestroy,
+  OnInit,
+  ViewChild,
+} from '@angular/core';
 import GraphicsLayer from '@arcgis/core/layers/GraphicsLayer';
 import WebMap from '@arcgis/core/WebMap';
 import Sketch from '@arcgis/core/widgets/Sketch';
@@ -40,13 +46,13 @@ export class HomeComponent implements OnInit, OnDestroy {
       view,
       layer: gLayer
     });
-    view.ui.add(sketch, "top-right");
+    view.ui.add(sketch, 'top-right');
     return this.view.when();
   }
 
   ngOnInit(): any {
     esriConfig.assetsPath = '/assets/';
-    this.initializeMap()
+    this.initializeMap();
   }
 
   ngOnDestroy(): void {
