@@ -11,4 +11,4 @@ import { CoordsService } from '../../services/coords.service';
   exports: [LocationComponent],
   providers: [CoordsService]
 })
-export class LocationModule {}
+export default class LocationModule {}
