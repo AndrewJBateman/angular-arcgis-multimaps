@@ -41,12 +41,12 @@
 
 ## :signal_strength: Technologies
 
-* [Angular v15](https://angular.io/)
-* [Angular Service Workers v15](https://angular.io/guide/service-worker-getting-started) used to make this a Progressive Web App (PWA)
-* [Angular Server-side rendering (SSR) with Angular Universal](https://angular.io/guide/universal)
-* [Angular Formcontrol](https://angular.io/api/forms/FormControl)
+* [Angular v16](https://angular.io/)
+* [Angular Service Workers v16](https://angular.io/guide/service-worker-getting-started) used to make this a Progressive Web App (PWA)
+* [Angular Server-side rendering (SSR) with Angular Universal v16](https://angular.io/guide/universal)
+* [Angular Formcontrol v16](https://angular.io/api/forms/FormControl)
 * [RxJS Library v7](https://angular.io/guide/rx-library) used to handle async operations using observables
-* [@arcgis/core v4.24.7](https://www.npmjs.com/package/@arcgis/core) - the version is significant because ES modules were added after v4.18
+* [@arcgis/core v4.26.5](https://www.npmjs.com/package/@arcgis/core) - the version is significant because ES modules were added after v4.18
 
 ## :floppy_disk: Setup
 
@@ -66,10 +66,30 @@
 
 ## :computer: Code Examples
 
-* extract from ``
+* extract from `app/pages/location/services/coords.service.ts`
 
 ```typescript
-
+    // handle error if geolocation request unsuccesful
+    function handleError(error: any) {
+      let errorStr;
+      switch (error.code) {
+        case error.PERMISSION_DENIED:
+          errorStr = 'User denied the request for Geolocation.';
+          break;
+        case error.POSITION_UNAVAILABLE:
+          errorStr = 'Location information is unavailable.';
+          break;
+        case error.TIMEOUT:
+          errorStr = 'The request to get user location timed out.';
+          break;
+        case error.UNKNOWN_ERROR:
+          errorStr = 'An unknown error occurred.';
+          break;
+        default:
+          errorStr = 'An unknown error occurred.';
+      }
+      console.error('An error occurred: ' + errorStr);
+    }
 ```
 
 ## :cool: Features
@@ -79,8 +99,8 @@
 
 ## :clipboard: Status & To-Do List
 
-* Status: Working dev
-* To-Do: Home page: change map, Location page: Add user location pin if possible.Fix PWA & SSR or replace. Add home page map content, create web address and add to robots.txt and sitemap.xml
+* Status: Working
+* To-Do: Location page: Test PWA & SSR or replace. Add home page map content, create web address and add to robots.txt and sitemap.xml
 
 ## :clap: Inspiration
 
