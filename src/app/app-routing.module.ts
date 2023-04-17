@@ -11,33 +11,23 @@ const routes: Routes = [
   },
   {
     path: 'about',
-    loadChildren: () =>
-      import('./pages/about/about.module').then((mod) => mod.AboutModule),
+    loadChildren: () => import('./pages/about/about.module'),
   },
   {
     path: 'contact',
-    loadChildren: () =>
-      import('./pages/contact/pages/contact/contact.module').then(
-        (mod) => mod.ContactModule
-      ),
+    loadChildren: () => import('./pages/contact/pages/contact/contact.module'),
   },
 
   {
     path: 'location',
     loadChildren: () =>
-      import('./pages/location/pages/location/location.module').then(
-        (mod) => mod.LocationModule
-      ),
+      import('./pages/location/pages/location/location.module'),
   },
   { path: '**', component: NotFoundComponent },
 ];
 
 @NgModule({
-  imports: [
-    RouterModule.forRoot(routes, {
-
-    }),
-  ],
+  imports: [RouterModule.forRoot(routes, {})],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}
