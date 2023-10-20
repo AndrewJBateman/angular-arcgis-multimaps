@@ -21,7 +21,7 @@
 <div class="min-h-screen min-w-screen arcgis-blue">
   <div
     class="flex justify-center w-full h-screen pt-10 mx-auto"
-    *ngIf="user$ | async as user"
+    *ngIf="(user$ | async) as user; else loading"
   >
     <div class="max-w-xs">
       <div class="shadow-xl info-card">
@@ -95,4 +95,7 @@
       </div>
     </div>
   </div>
+  <ng-template #loading>
+    <p>Loading...</p>
+  </ng-template>
 </div>
