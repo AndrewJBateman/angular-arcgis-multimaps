@@ -18,7 +18,7 @@
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "allowedCommonJsDependencies": ["luxon"],
-            "outputPath": "dist/angular-arcgis-multimaps/browser",
+            "outputPath": "dist/angular-arcgis-multimaps",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -109,60 +109,6 @@
             ],
             "scripts": []
           }
-        },
-        "server": {
-          "builder": "@angular-devkit/build-angular:server",
-          "options": {
-            "outputPath": "dist/angular-arcgis-multimaps/server",
-            "main": "server.ts",
-            "tsConfig": "tsconfig.server.json",
-            "inlineStyleLanguage": "scss"
-          },
-          "configurations": {
-            "production": {
-              "outputHashing": "media"
-            },
-            "development": {
-              "optimization": false,
-              "sourceMap": true,
-              "extractLicenses": false,
-              "vendorChunk": true
-            }
-          },
-          "defaultConfiguration": "production"
-        },
-        "serve-ssr": {
-          "builder": "@nguniversal/builders:ssr-dev-server",
-          "configurations": {
-            "development": {
-              "browserTarget": "angular-arcgis-multimaps:build:development",
-              "serverTarget": "angular-arcgis-multimaps:server:development"
-            },
-            "production": {
-              "browserTarget": "angular-arcgis-multimaps:build:production",
-              "serverTarget": "angular-arcgis-multimaps:server:production"
-            }
-          },
-          "defaultConfiguration": "development"
-        },
-        "prerender": {
-          "builder": "@nguniversal/builders:prerender",
-          "options": {
-            "routes": [
-              "/"
-            ]
-          },
-          "configurations": {
-            "production": {
-              "browserTarget": "angular-arcgis-multimaps:build:production",
-              "serverTarget": "angular-arcgis-multimaps:server:production"
-            },
-            "development": {
-              "browserTarget": "angular-arcgis-multimaps:build:development",
-              "serverTarget": "angular-arcgis-multimaps:server:development"
-            }
-          },
-          "defaultConfiguration": "production"
         }
       }
     }
