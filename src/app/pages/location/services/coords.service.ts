@@ -5,6 +5,7 @@ import { Coordinates } from '../pages/models/coordinates.model';
 export class CoordsService {
 
   // get user coordinates from successful geolocation request
+  // store coords in local session storage on user machine
   public storeUserLocation(): void {
     const getCoords = (position: any): void => {
       console.log('getCoords position.coords: ', position.coords);

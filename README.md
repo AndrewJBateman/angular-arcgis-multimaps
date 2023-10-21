@@ -20,11 +20,11 @@
 
 ## :books: General info
 
-* Basic PWA with SSR and Tailwind CSS
+* Basic PWA app with Tailwind CSS
 * Esri-map view refactored to use @arcgis/core mapView and WebMap with a GraphicsLayer to allow sketching
 * WebView map specified using a [portalItem id](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#portalItem)
 * About page - info. about the app
-* Contact page - info. about the author
+* Contact page - info. about the author - data from Github API
 * Location page uses sessionStorage to store user coordinates and these are lost the moment the browser is closed
 * [Progressive Web App (PWA)](https://firt.dev/pwa-2021/) capability added. The PWA is still evolving and I believe worth including in an app but needs to be kept up to date
 * [ArcGIS API for Javascript CDN](https://developers.arcgis.com/javascript/latest/guide/get-api/#cdn) link in `esri-map` component.
@@ -43,21 +43,18 @@
 
 * [Angular v16](https://angular.io/)
 * [Angular Service Workers v16](https://angular.io/guide/service-worker-getting-started) used to make this a Progressive Web App (PWA)
-* [Angular Server-side rendering (SSR) with Angular Universal v16](https://angular.io/guide/universal)
 * [Angular Formcontrol v16](https://angular.io/api/forms/FormControl)
 * [RxJS Library v7](https://angular.io/guide/rx-library) used to handle async operations using observables
-* [@arcgis/core v4.26.5](https://www.npmjs.com/package/@arcgis/core) - the version is significant because ES modules were added after v4.18
+* [@arcgis/core v4.26.6](https://www.npmjs.com/package/@arcgis/core) - the version is significant because ES modules were added after v4.18
 
 ## :floppy_disk: Setup
 
 * Install dependencies by running `npm i` then enter:
 * `npm start` for a dev server. Navigate to `http://localhost:4200/`.
 * `npm run build` for a PWA build folder (not working)
-* `http-server -p 8080 -c-1 dist/angular-arcgis-multimaps` then select `http://127.0.0.1:8080` to see PWA app running on a dev server (`ng serve` does not work) (not working)
-* `npm run build:ssr` to create SSR build files
-* `npm run serve:ssr` to see on a dev server `http://localhost:4000`
+* `http-server -p 8080 -c-1 dist/angular-arcgis-multimaps/` then select `http://127.0.0.1:8080` to see PWA app running on a dev server (`ng serve` does not work)
 * The app will automatically reload if you change any of the source files
-
+  
 ## :flashlight: Testing
 
 * `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
@@ -100,7 +97,7 @@
 ## :clipboard: Status & To-Do List
 
 * Status: Working
-* To-Do: Location page: Test PWA & SSR or replace. Add home page map content, create web address and add to robots.txt and sitemap.xml
+* To-Do: Location page: Test PWA. create web address and add to robots.txt and sitemap.xml
 
 ## :clap: Inspiration
 
@@ -116,4 +113,4 @@
 
 ## :envelope: Contact
 
-* Repo created by [ABateman](https://github.com/AndrewJBateman), email: gomezbateman@yahoo.com
+* Repo created by [ABateman](https://github.com/AndrewJBateman), email: `gomezbateman@yahoo.com`
