@@ -41,11 +41,11 @@
 
 ## :signal_strength: Technologies
 
-* [Angular v16](https://angular.io/)
-* [Angular Service Workers v16](https://angular.io/guide/service-worker-getting-started) used to make this a Progressive Web App (PWA)
-* [Angular Formcontrol v16](https://angular.io/api/forms/FormControl)
+* [Angular v17](https://angular.io/)
+* [Angular Service Workers v17](https://angular.io/guide/service-worker-getting-started) used to make this a Progressive Web App (PWA)
+* [Angular Formcontrol 17](https://angular.io/api/forms/FormControl)
 * [RxJS Library v7](https://angular.io/guide/rx-library) used to handle async operations using observables
-* [@arcgis/core v4.26.6](https://www.npmjs.com/package/@arcgis/core) - the version is significant because ES modules were added after v4.18
+* [@arcgis/core v4.29.10](https://www.npmjs.com/package/@arcgis/core) - the version is significant because ES modules were added after v4.18
 
 ## :floppy_disk: Setup
 
