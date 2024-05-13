@@ -97,7 +97,7 @@
 ## :clipboard: Status & To-Do List
 
 * Status: Working
-* To-Do: Location page: Test PWA. create web address and add to robots.txt and sitemap.xml
+* To-Do: Nothing
 
 ## :clap: Inspiration
 
@@ -113,4 +113,4 @@
 
 ## :envelope: Contact
 
-* Repo created by [ABateman](https://github.com/AndrewJBateman), email: `gomezbateman@yahoo.com`
+* Repo created by [ABateman](https://github.com/AndrewJBateman), email: `gomezbateman@gmail.com`
